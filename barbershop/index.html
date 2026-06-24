@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Sharp Edge — Premium Barbershop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;500;600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav-header" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">
+        <span class="logo-scissors">✂</span>
+        <span class="logo-text">THE SHARP <span class="logo-accent">EDGE</span></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#services">Services</a>
+        <a href="#team">Our Barbers</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#book">Book</a>
+        <a href="#book" class="btn btn-nav">Book Appointment</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-stripe"></div>
+    <div class="hero-content container">
+      <div class="hero-eyebrow">
+        <span class="eyebrow-line"></span>
+        <span>Est. 2015 — Austin, Texas</span>
+        <span class="eyebrow-line"></span>
+      </div>
+      <h1>LOOK SHARP.<br /><span class="hero-script">Feel Confident.</span></h1>
+      <p class="hero-sub">Old-school craft. Modern style. We're not just cutting hair — we're building your look, one appointment at a time.</p>
+      <div class="hero-btns">
+        <a href="#book" class="btn btn-primary">Book Appointment</a>
+        <a href="#services" class="btn btn-ghost">See Services & Pricing</a>
+      </div>
+      <div class="hero-tags">
+        <span>Walk-ins Welcome</span>
+        <span>·</span>
+        <span>Open 7 Days</span>
+        <span>·</span>
+        <span>No Waiting List for Members</span>
+      </div>
+    </div>
+    <div class="hero-pole">
+      <div class="pole-inner">
+        <div class="pole-stripe"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">What We Do</p>
+        <h2>Services & Pricing</h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">✂️</div>
+          <h3>Classic Haircut</h3>
+          <p>Scissor or clipper cut, styled to your preference. Includes a hot towel finish.</p>
+          <div class="service-footer">
+            <span class="service-time">⏱ 30 min</span>
+            <span class="service-price">$35</span>
+          </div>
+        </div>
+        <div class="service-card featured-card">
+          <div class="featured-label">Most Booked</div>
+          <div class="service-icon">💈</div>
+          <h3>Cut + Beard</h3>
+          <p>Full haircut with a beard trim, shape-up, and straight razor finish. The signature combo.</p>
+          <div class="service-footer">
+            <span class="service-time">⏱ 55 min</span>
+            <span class="service-price">$55</span>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🪒</div>
+          <h3>Hot Towel Shave</h3>
+          <p>Traditional straight razor shave with hot towel, pre-shave oil, and aftershave balm.</p>
+          <div class="service-footer">
+            <span class="service-time">⏱ 40 min</span>
+            <span class="service-price">$45</span>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">👶</div>
+          <h3>Kids Cut (Under 12)</h3>
+          <p>A relaxed, patient cut for the little ones. We make it fun, not a battle.</p>
+          <div class="service-footer">
+            <span class="service-time">⏱ 25 min</span>
+            <span class="service-price">$25</span>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🧴</div>
+          <h3>Beard Sculpt & Shape</h3>
+          <p>Precision beard line-up, trimming, and grooming with premium products.</p>
+          <div class="service-footer">
+            <span class="service-time">⏱ 30 min</span>
+            <span class="service-price">$30</span>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">👑</div>
+          <h3>The Royal Treatment</h3>
+          <p>Haircut + beard + hot towel shave + scalp massage + styling. The full experience.</p>
+          <div class="service-footer">
+            <span class="service-time">⏱ 90 min</span>
+            <span class="service-price">$85</span>
+          </div>
+        </div>
+      </div>
+      <div class="membership-banner">
+        <div class="mb-left">
+          <span class="mb-badge">MEMBERS</span>
+          <h3>Sharp Edge Membership</h3>
+          <p>2 haircuts per month + 10% off all services + no waiting, ever.</p>
+        </div>
+        <div class="mb-right">
+          <span class="mb-price">$59<small>/mo</small></span>
+          <a href="#book" class="btn btn-primary">Join Today</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="section team-section" id="team">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Meet the Crew</p>
+        <h2>Our Barbers</h2>
+        <p class="section-sub">Every barber on our team has 5+ years of experience and goes through a 3-month in-house training program before touching a client's head.</p>
+      </div>
+      <div class="team-grid">
+        <div class="barber-card">
+          <div class="barber-avatar">
+            <div class="avatar-circle">💈</div>
+          </div>
+          <div class="barber-info">
+            <h3>Marcus "The Fade King" Cole</h3>
+            <span class="barber-title">Master Barber · Owner</span>
+            <p>12 years behind the chair. Specializes in fades, skin fades, and modern textured styles.</p>
+            <div class="barber-tags">
+              <span>Fades</span><span>Textured</span><span>Modern</span>
+            </div>
+          </div>
+        </div>
+        <div class="barber-card">
+          <div class="barber-avatar">
+            <div class="avatar-circle">✂️</div>
+          </div>
+          <div class="barber-info">
+            <h3>Darius "Straight Blade" Okafor</h3>
+            <span class="barber-title">Senior Barber · Shave Specialist</span>
+            <p>8 years of experience. Known for the cleanest straight razor shaves in the city.</p>
+            <div class="barber-tags">
+              <span>Straight Razor</span><span>Beards</span><span>Classic</span>
+            </div>
+          </div>
+        </div>
+        <div class="barber-card">
+          <div class="barber-avatar">
+            <div class="avatar-circle">💇</div>
+          </div>
+          <div class="barber-info">
+            <h3>Sofia Reyes</h3>
+            <span class="barber-title">Barber · Color Specialist</span>
+            <p>6 years experience. Specializes in creative cuts, color, and keeping up with modern trends.</p>
+            <div class="barber-tags">
+              <span>Color</span><span>Creative Cuts</span><span>Trends</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">The Work</p>
+        <h2>Fresh Cuts Gallery</h2>
+        <p class="section-sub">A sample of the work that walks out of our chairs every day.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item gi-tall">
+          <div class="gi-inner">
+            <div class="gi-emoji">💈</div>
+            <div class="gi-label">Skin Fade + Line Up</div>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gi-inner">
+            <div class="gi-emoji">✂️</div>
+            <div class="gi-label">Classic Taper</div>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gi-inner">
+            <div class="gi-emoji">🪒</div>
+            <div class="gi-label">Hot Towel Shave</div>
+          </div>
+        </div>
+        <div class="gallery-item gi-wide">
+          <div class="gi-inner">
+            <div class="gi-emoji">🧔</div>
+            <div class="gi-label">Beard Sculpt</div>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gi-inner">
+            <div class="gi-emoji">💇</div>
+            <div class="gi-label">Modern Textured</div>
+          </div>
+        </div>
+      </div>
+      <p class="gallery-cta">Follow us on <a href="#" class="social-link">@sharpedgebarber</a> for daily cuts.</p>
+    </div>
+  </section>
+
+  <!-- BOOK -->
+  <section class="section book-section" id="book">
+    <div class="container book-inner">
+      <div class="book-info">
+        <p class="section-label">Schedule</p>
+        <h2>Book Your Chair</h2>
+        <p>Choose your barber, pick a time, and show up. No stress, no waiting.</p>
+        <div class="hours-grid">
+          <div class="hours-row"><span>Mon – Fri</span><span>9 AM – 8 PM</span></div>
+          <div class="hours-row"><span>Saturday</span><span>8 AM – 7 PM</span></div>
+          <div class="hours-row"><span>Sunday</span><span>10 AM – 5 PM</span></div>
+        </div>
+        <div class="location-card">
+          <p>📍 1824 Barton Springs Rd, Austin, TX</p>
+          <p>📞 (512) 555-0387</p>
+          <p>✉️ hello@sharpedgebarber.com</p>
+        </div>
+      </div>
+      <form class="book-form" onsubmit="handleBook(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" placeholder="First & Last" required />
+          </div>
+          <div class="form-group">
+            <label>Phone</label>
+            <input type="tel" placeholder="(512) 000-0000" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Choose a Barber</label>
+          <select required>
+            <option value="">No preference — first available</option>
+            <option>Marcus Cole</option>
+            <option>Darius Okafor</option>
+            <option>Sofia Reyes</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Service</label>
+          <select required>
+            <option value="">Select a service</option>
+            <option>Classic Haircut — $35</option>
+            <option>Cut + Beard — $55</option>
+            <option>Hot Towel Shave — $45</option>
+            <option>Kids Cut — $25</option>
+            <option>Beard Sculpt & Shape — $30</option>
+            <option>The Royal Treatment — $85</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Date</label>
+            <input type="date" required />
+          </div>
+          <div class="form-group">
+            <label>Preferred Time</label>
+            <select required>
+              <option value="">Pick a time</option>
+              <option>9:00 AM</option><option>9:30 AM</option><option>10:00 AM</option>
+              <option>10:30 AM</option><option>11:00 AM</option><option>11:30 AM</option>
+              <option>12:00 PM</option><option>1:00 PM</option><option>2:00 PM</option>
+              <option>3:00 PM</option><option>4:00 PM</option><option>5:00 PM</option>
+              <option>6:00 PM</option><option>7:00 PM</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Notes</label>
+          <textarea rows="2" placeholder="Style references, specific requests..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Confirm Appointment</button>
+        <div class="form-success hidden" id="bookSuccess">
+          ✅ You're booked! We'll send a confirmation text shortly.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contact">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#home" class="logo logo-footer">
+          <span class="logo-scissors">✂</span>
+          <span class="logo-text">THE SHARP <span class="logo-accent">EDGE</span></span>
+        </a>
+        <p>Old-school craft. Modern style.<br />Walk-ins always welcome.</p>
+        <div class="social-links">
+          <a href="#">📸 Instagram</a>
+          <a href="#">🎵 TikTok</a>
+          <a href="#">⭐ Google</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <p>Classic Haircut</p>
+        <p>Cut + Beard Combo</p>
+        <p>Hot Towel Shave</p>
+        <p>Kids Cuts</p>
+        <p>Membership Plans</p>
+      </div>
+      <div class="footer-col">
+        <h4>Visit</h4>
+        <p>1824 Barton Springs Rd</p>
+        <p>Austin, TX 78704</p>
+        <p>📞 (512) 555-0387</p>
+        <p style="margin-top:0.75rem; color: var(--red)">Open 7 Days a Week</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 The Sharp Edge Barbershop. All rights reserved.</p>
+      <p class="demo-note">✦ Demo site — built by <a href="#">Yair Sanchez</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

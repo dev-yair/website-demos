@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Bella Notte — Italian Restaurant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav-header" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">La Bella Notte</a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#reserve">Reservations</a>
+        <a href="#contact">Contact</a>
+        <a href="#reserve" class="btn btn-nav">Reserve a Table</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-content container">
+      <p class="hero-tag">Since 1998 · Austin, Texas</p>
+      <h1>Where Every<br /><em>Dinner Becomes</em><br />a Memory.</h1>
+      <p class="hero-sub">Authentic Italian cuisine crafted from family recipes passed down three generations. Intimate atmosphere, exceptional wine, unforgettable evenings.</p>
+      <div class="hero-btns">
+        <a href="#reserve" class="btn btn-primary">Reserve a Table</a>
+        <a href="#menu" class="btn btn-outline">View Menu</a>
+      </div>
+    </div>
+    <div class="hero-decoration">
+      <div class="deco-circle"></div>
+      <div class="deco-line"></div>
+    </div>
+  </section>
+
+  <!-- STRIP -->
+  <div class="strip">
+    <div class="container strip-inner">
+      <div class="strip-item"><span>🍷</span> Fine Italian Wine Selection</div>
+      <div class="strip-divider"></div>
+      <div class="strip-item"><span>🌿</span> Fresh Local Ingredients</div>
+      <div class="strip-divider"></div>
+      <div class="strip-item"><span>⭐</span> AAA Four Diamond Award</div>
+      <div class="strip-divider"></div>
+      <div class="strip-item"><span>🎻</span> Live Music Fridays & Saturdays</div>
+    </div>
+  </div>
+
+  <!-- MENU -->
+  <section class="section" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Cucina Italiana</p>
+        <h2>Our Menu</h2>
+        <div class="divider-ornament">✦</div>
+        <p class="section-sub">Seasonal menus crafted by Executive Chef Marco Ricci. All pasta made in-house daily.</p>
+      </div>
+
+      <div class="menu-tabs">
+        <button class="tab active" data-tab="starters">Antipasti</button>
+        <button class="tab" data-tab="mains">Secondi</button>
+        <button class="tab" data-tab="pasta">Pasta</button>
+        <button class="tab" data-tab="desserts">Dolci</button>
+      </div>
+
+      <div class="menu-grid" id="starters">
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <h3>Burrata Pugliese</h3><span class="price">$18</span>
+          </div>
+          <p>Fresh burrata, heirloom tomatoes, basil oil, sea salt, toasted crostini.</p>
+          <span class="tag">Chef's Pick</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <h3>Carpaccio di Manzo</h3><span class="price">$22</span>
+          </div>
+          <p>Thinly sliced raw beef tenderloin, arugula, shaved Parmigiano, truffle oil, capers.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <h3>Zuppa di Pesce</h3><span class="price">$16</span>
+          </div>
+          <p>Shellfish bisque, saffron broth, toasted sourdough, fresh herbs.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <h3>Arancini al Tartufo</h3><span class="price">$14</span>
+          </div>
+          <p>Crispy risotto balls, black truffle, fontina, house marinara.</p>
+          <span class="tag tag-veg">Vegetarian</span>
+        </div>
+      </div>
+
+      <div class="menu-grid hidden" id="mains">
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <h3>Bistecca Fiorentina</h3><span class="price">$58</span>
+          </div>
+          <p>28-day dry-aged T-bone, rosemary butter, roasted garlic, seasonal vegetables.</p>
+          <span class="tag">Signature</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <h3>Branzino al Forno</h3><span class="price">$42</span>
+          </div>
+          <p>Whole roasted European sea bass, lemon caper sauce, fennel, cherry tomatoes.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <h3>Osso Buco Milanese</h3><span class="price">$46</span>
+          </div>
+          <p>Braised veal shank, saffron risotto, gremolata. Slow cooked 6 hours.</p>
+          <span class="tag">Chef's Pick</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <h3>Pollo alla Parmigiana</h3><span class="price">$34</span>
+          </div>
+          <p>Free-range chicken, hand-crushed San Marzano tomato, fresh mozzarella, basil.</p>
+        </div>
+      </div>
+
+      <div class="menu-grid hidden" id="pasta">
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <h3>Tagliatelle al Ragù</h3><span class="price">$28</span>
+          </div>
+          <p>House-made egg pasta, slow-braised Bolognese, Parmigiano Reggiano. 8-hour sauce.</p>
+          <span class="tag">Signature</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <h3>Cacio e Pepe</h3><span class="price">$24</span>
+          </div>
+          <p>Tonnarelli pasta, Pecorino Romano, Parmigiano, freshly cracked black pepper.</p>
+          <span class="tag tag-veg">Vegetarian</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <h3>Linguine alle Vongole</h3><span class="price">$32</span>
+          </div>
+          <p>Fresh littleneck clams, white wine, garlic, chili flakes, parsley.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <h3>Pappardelle al Cinghiale</h3><span class="price">$30</span>
+          </div>
+          <p>Wide ribbon pasta, wild boar ragù, juniper berries, rosemary.</p>
+        </div>
+      </div>
+
+      <div class="menu-grid hidden" id="desserts">
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <h3>Tiramisù della Casa</h3><span class="price">$12</span>
+          </div>
+          <p>Our grandmother's recipe. Mascarpone, espresso-soaked ladyfingers, dark cocoa.</p>
+          <span class="tag">Since 1998</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <h3>Panna Cotta al Limone</h3><span class="price">$11</span>
+          </div>
+          <p>Silky vanilla cream, Amalfi lemon curd, fresh berries, mint.</p>
+          <span class="tag tag-veg">Vegetarian</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <h3>Cannoli Siciliani</h3><span class="price">$10</span>
+          </div>
+          <p>Crispy shells filled to order, sweet ricotta, pistachios, candied orange peel.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <h3>Affogato al Caffè</h3><span class="price">$9</span>
+          </div>
+          <p>Vanilla gelato drowned in a double shot of house espresso. Simple. Perfect.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <div class="container about-grid">
+      <div class="about-text">
+        <p class="section-label">Our Story</p>
+        <h2>Three Generations of <em>Passion</em></h2>
+        <div class="divider-ornament" style="text-align:left; margin-bottom:1.5rem;">✦</div>
+        <p>La Bella Notte was founded in 1998 by Lucia and Enzo Ricci, who left their village in Emilia-Romagna with nothing but a suitcase and a binder full of family recipes.</p>
+        <p>Today, their grandson Marco helms the kitchen — trained at the Culinary Institute of Bologna, refined in Michelin-starred restaurants across Italy, and brought home to honor the food that raised him.</p>
+        <p>We believe dinner should slow you down. Pull up a chair. Pour the wine. The pasta will be ready soon.</p>
+        <div class="chef-card">
+          <div class="chef-avatar">👨‍🍳</div>
+          <div>
+            <strong>Chef Marco Ricci</strong>
+            <span>Executive Chef & Co-Owner</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-visual">
+        <div class="about-card-stack">
+          <div class="about-card ac-back">
+            <span class="ac-label">Reservations</span>
+            <span class="ac-value">Fully Booked</span>
+            <span class="ac-note">This Weekend</span>
+          </div>
+          <div class="about-card ac-front">
+            <div class="ac-stat-row">
+              <div class="ac-stat"><span>26</span>Years Open</div>
+              <div class="ac-stat"><span>4.9★</span>Google Rating</div>
+            </div>
+            <div class="ac-quote">"The best Italian restaurant outside of Italy."</div>
+            <div class="ac-source">— Austin Chronicle, 2024</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESERVATIONS -->
+  <section class="section reserve-section" id="reserve">
+    <div class="container reserve-inner">
+      <div class="reserve-text">
+        <p class="section-label">Join Us</p>
+        <h2>Make a Reservation</h2>
+        <div class="divider-ornament" style="text-align:left;">✦</div>
+        <div class="hours-block">
+          <h4>Hours</h4>
+          <p><strong>Mon – Thu</strong> &nbsp; 5:00 PM – 10:00 PM</p>
+          <p><strong>Fri – Sat</strong> &nbsp;&nbsp; 5:00 PM – 11:00 PM</p>
+          <p><strong>Sunday</strong> &nbsp;&nbsp;&nbsp; 4:00 PM – 9:00 PM</p>
+        </div>
+        <p class="reserve-note">For parties of 8 or more, please call us directly at <strong>(512) 555-0192</strong>.</p>
+      </div>
+      <form class="reserve-form" onsubmit="handleReserve(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" placeholder="Giovanni" required />
+          </div>
+          <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" placeholder="Rossi" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Date</label>
+            <input type="date" required />
+          </div>
+          <div class="form-group">
+            <label>Time</label>
+            <select required>
+              <option value="">Select time</option>
+              <option>5:00 PM</option>
+              <option>5:30 PM</option>
+              <option>6:00 PM</option>
+              <option>6:30 PM</option>
+              <option>7:00 PM</option>
+              <option>7:30 PM</option>
+              <option>8:00 PM</option>
+              <option>8:30 PM</option>
+              <option>9:00 PM</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Party Size</label>
+            <select required>
+              <option value="">Guests</option>
+              <option>1</option><option>2</option><option>3</option>
+              <option>4</option><option>5</option><option>6</option><option>7</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Phone</label>
+            <input type="tel" placeholder="(512) 555-0000" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Special Requests</label>
+          <textarea placeholder="Allergies, anniversary, window table..." rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Request Reservation</button>
+        <p class="form-note">You'll receive a confirmation within 2 hours.</p>
+        <div class="form-success hidden" id="formSuccess">
+          🥂 Thank you! We'll confirm your reservation shortly.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contact">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#home" class="logo logo-footer">La Bella Notte</a>
+        <p>Authentic Italian cuisine since 1998.<br />Where every dinner becomes a memory.</p>
+        <div class="social-links">
+          <a href="#">📸 Instagram</a>
+          <a href="#">👍 Facebook</a>
+          <a href="#">⭐ Yelp</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Visit Us</h4>
+        <p>📍 412 Congress Ave<br />Austin, TX 78701</p>
+        <p>📞 (512) 555-0192</p>
+        <p>✉️ dining@labbellanotte.com</p>
+      </div>
+      <div class="footer-col">
+        <h4>Hours</h4>
+        <p>Mon – Thu: 5 – 10 PM</p>
+        <p>Fri – Sat: 5 – 11 PM</p>
+        <p>Sunday: 4 – 9 PM</p>
+        <p style="margin-top:0.75rem; color: var(--gold)">Live Music Fri & Sat</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 La Bella Notte. All rights reserved.</p>
+      <p class="demo-note">✦ Demo site — built by <a href="#">Yair Sanchez</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
