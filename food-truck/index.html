@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fuego Street Kitchen — Food Truck</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav-header" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">🔥 Fuego<span>Street Kitchen</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#findus">Find Us</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact" class="btn btn-nav">Order Now</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <p class="hero-tag">Fresh • Bold • Street</p>
+      <h1>Flavor Has <br /><span class="highlight">No Address.</span></h1>
+      <p class="hero-sub">Award-winning street tacos, bowls, and bites rolled right to your neighborhood. Made from scratch, every single day.</p>
+      <div class="hero-btns">
+        <a href="#menu" class="btn btn-primary">See the Menu</a>
+        <a href="#findus" class="btn btn-outline">Find Our Truck</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="section" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">What We Serve</p>
+        <h2>The Menu</h2>
+        <p class="section-sub">Everything made with real ingredients, bold spices, and a whole lot of love.</p>
+      </div>
+
+      <div class="menu-tabs">
+        <button class="tab active" data-tab="tacos">Tacos</button>
+        <button class="tab" data-tab="bowls">Bowls</button>
+        <button class="tab" data-tab="sides">Sides &amp; Drinks</button>
+      </div>
+
+      <div class="menu-grid" id="tacos">
+        <div class="menu-card">
+          <div class="menu-card-icon">🌮</div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Al Pastor</h3>
+              <span class="price">$4.50</span>
+            </div>
+            <p>Marinated pork, pineapple salsa, cilantro, diced onion, on a warm corn tortilla.</p>
+            <span class="badge">Fan Favorite</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-icon">🌮</div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Brisket Smash</h3>
+              <span class="price">$5.50</span>
+            </div>
+            <p>Slow-smoked brisket, chipotle crema, pickled jalapeños, crunchy slaw.</p>
+            <span class="badge badge-new">New</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-icon">🌮</div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Crispy Fish</h3>
+              <span class="price">$5.00</span>
+            </div>
+            <p>Beer-battered cod, mango habanero slaw, avocado crema, lime.</p>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-icon">🌮</div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Veggie Fuego</h3>
+              <span class="price">$4.00</span>
+            </div>
+            <p>Roasted peppers, black beans, corn, cotija cheese, smoky chipotle sauce. <span class="veg">🌱 Vegan</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-grid hidden" id="bowls">
+        <div class="menu-card">
+          <div class="menu-card-icon">🥣</div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Street Bowl Classic</h3>
+              <span class="price">$12.00</span>
+            </div>
+            <p>Cilantro-lime rice, black beans, your choice of protein, pico de gallo, guac, sour cream.</p>
+            <span class="badge">Best Seller</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-icon">🥣</div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Smoky BBQ Bowl</h3>
+              <span class="price">$13.00</span>
+            </div>
+            <p>Pulled pork, jalapeño mac, street corn, crispy onions, BBQ drizzle.</p>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-icon">🥣</div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Green Goddess Bowl</h3>
+              <span class="price">$11.00</span>
+            </div>
+            <p>Quinoa base, roasted veggies, avocado, edamame, tahini verde drizzle. <span class="veg">🌱 Vegan</span></p>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-icon">🥣</div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Breakfast Bowl</h3>
+              <span class="price">$10.00</span>
+            </div>
+            <p>Scrambled eggs, chorizo, roasted potatoes, pico, shredded cheese, hot sauce.</p>
+            <span class="badge badge-new">AM Only</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-grid hidden" id="sides">
+        <div class="menu-card">
+          <div class="menu-card-icon">🌽</div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Elote Cups</h3>
+              <span class="price">$4.00</span>
+            </div>
+            <p>Mexican street corn, cotija, chili powder, lime crema. Served hot.</p>
+            <span class="badge">Fan Favorite</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-icon">🍟</div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Fuego Fries</h3>
+              <span class="price">$5.00</span>
+            </div>
+            <p>Crispy fries topped with queso, jalapeños, pico de gallo, and our house hot sauce.</p>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-icon">🥤</div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Agua Fresca</h3>
+              <span class="price">$3.00</span>
+            </div>
+            <p>Rotating seasonal flavors. Today: Watermelon Mint &amp; Tamarind. Ask about our horchata.</p>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-icon">🍺</div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Local Craft Beer</h3>
+              <span class="price">$6.00</span>
+            </div>
+            <p>Rotating selection of local brews. Available at select locations. Must be 21+.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <div class="container about-grid">
+      <div class="about-visual">
+        <div class="about-truck-card">
+          <div class="truck-art">🚚</div>
+          <div class="truck-stats">
+            <div class="stat"><span class="stat-num">8+</span><span class="stat-label">Years Rolling</span></div>
+            <div class="stat"><span class="stat-num">12k</span><span class="stat-label">Happy Customers</span></div>
+            <div class="stat"><span class="stat-num">3</span><span class="stat-label">City Awards</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="about-text">
+        <p class="section-label">Our Story</p>
+        <h2>Born on the Street, <br />Built on Flavor.</h2>
+        <p>Fuego Street Kitchen started in 2016 with one truck, two cooks, and a single recipe our grandmother swore would change lives. Turns out she was right.</p>
+        <p>We source locally whenever possible — our produce comes from farms within 50 miles, and our tortillas are pressed fresh every morning before we hit the road.</p>
+        <p>No shortcuts. No freezer bags. Just real food, made fast, served hot.</p>
+        <div class="about-badges">
+          <span>🏆 Best Food Truck 2023</span>
+          <span>📍 Locally Sourced</span>
+          <span>🤝 Family Owned</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FIND US -->
+  <section class="section" id="findus">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Weekly Schedule</p>
+        <h2>Find Our Truck</h2>
+        <p class="section-sub">We move around — follow us on Instagram for real-time updates and surprise pop-ups.</p>
+      </div>
+      <div class="schedule-grid">
+        <div class="schedule-card closed">
+          <div class="day">Mon</div>
+          <div class="schedule-info">
+            <span class="location">Closed</span>
+            <span class="time">Resting up for the week 😴</span>
+          </div>
+        </div>
+        <div class="schedule-card">
+          <div class="day">Tue</div>
+          <div class="schedule-info">
+            <span class="location">Downtown Tech District</span>
+            <span class="time">11:00 AM – 2:00 PM</span>
+          </div>
+        </div>
+        <div class="schedule-card">
+          <div class="day">Wed</div>
+          <div class="schedule-info">
+            <span class="location">Riverside Park Lot</span>
+            <span class="time">11:30 AM – 3:00 PM</span>
+          </div>
+        </div>
+        <div class="schedule-card">
+          <div class="day">Thu</div>
+          <div class="schedule-info">
+            <span class="location">Midtown Business Hub</span>
+            <span class="time">11:00 AM – 2:30 PM</span>
+          </div>
+        </div>
+        <div class="schedule-card">
+          <div class="day">Fri</div>
+          <div class="schedule-info">
+            <span class="location">Harbor Walk + Evening Spot TBA</span>
+            <span class="time">11:00 AM – 8:00 PM</span>
+          </div>
+        </div>
+        <div class="schedule-card highlight-card">
+          <div class="day">Sat</div>
+          <div class="schedule-info">
+            <span class="location">City Farmers Market</span>
+            <span class="time">8:00 AM – 2:00 PM</span>
+          </div>
+          <span class="hot-badge">🔥 Most Popular</span>
+        </div>
+        <div class="schedule-card">
+          <div class="day">Sun</div>
+          <div class="schedule-info">
+            <span class="location">Craft Brewing Co. (rotating)</span>
+            <span class="time">12:00 PM – 6:00 PM</span>
+          </div>
+        </div>
+      </div>
+      <div class="catering-banner">
+        <div>
+          <h3>Catering & Private Events</h3>
+          <p>Bringing Fuego to your wedding, corporate lunch, or backyard bash. Minimum 20 people.</p>
+        </div>
+        <a href="#contact" class="btn btn-primary">Get a Quote</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / FOOTER -->
+  <footer class="footer" id="contact">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#home" class="logo logo-footer">🔥 Fuego<span>Street Kitchen</span></a>
+        <p>Flavor has no address — but we're always close.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">📸 Instagram</a>
+          <a href="#" aria-label="TikTok">🎵 TikTok</a>
+          <a href="#" aria-label="Facebook">👍 Facebook</a>
+        </div>
+      </div>
+      <div class="footer-contact">
+        <h4>Get in Touch</h4>
+        <p>📞 (555) 388-4291</p>
+        <p>✉️ hello@fuegostreet.com</p>
+        <p>📍 Based in Austin, TX</p>
+        <a href="mailto:hello@fuegostreet.com" class="btn btn-primary" style="margin-top:1rem;">Book Us for an Event</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Fuego Street Kitchen. All rights reserved.</p>
+      <p class="demo-note">✦ Demo site — built by <a href="#">YourName.dev</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
